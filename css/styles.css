@@ -156,17 +156,36 @@ address {
 }
 
 .mail-phone-info:hover,
-.mail-phone-info:focus {
+.mail-phone-info:focus,
+.envelope:hover,
+.envelope:focus {
   color: var(--accent-color);
 }
 
 .header-contact-info-link {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* .header-contact-info-link::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-color: tomato;
+} */
+
+.envelope,
+.smartphone {
+  margin-right: 10px;
+
+  fill: currentColor;
 }
 
 .header-logo {
@@ -185,8 +204,21 @@ address {
   padding-top: 200px;
   padding-bottom: 200px;
   border: 1px solid transparent;
-
   background-color: var(--second-bg-color);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay.jpg);
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-header {
@@ -252,6 +284,25 @@ address {
 
 .special-qualities-item:last-child {
   margin-right: 0px;
+}
+
+.special-qualities-area {
+  display: flex;
+  width: 100%;
+  min-height: 120px;
+  background-color: var(--third-bg-color);
+  margin-bottom: 30px;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.satellite,
+.clock,
+.diagram,
+.astronaut {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .special-qualities-header {
@@ -430,6 +481,8 @@ address {
 .active {
   color: var(--current-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ------------------------------- Cards ---------------------------------*/
@@ -471,6 +524,12 @@ address {
 
 .cards-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.cards-item:hover,
+.cards-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-data {
