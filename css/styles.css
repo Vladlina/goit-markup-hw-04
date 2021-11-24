@@ -10,6 +10,8 @@
   --third-bg-color: #f5f4fa;
   --line-color: #ececec;
   --border-color: #eeeeee;
+  --networks-inactive: #afb1b8;
+  --networks-inactive-footer: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -279,7 +281,7 @@ address {
 .special-qualities-item {
   margin-right: 30px;
   width: 270px;
-  height: 101px;
+  height: 151px;
 }
 
 .special-qualities-item:last-child {
@@ -367,7 +369,7 @@ address {
 .our-team-item {
   background-color: var(--current-white-color);
   width: 270px;
-  height: 368px;
+  height: 428px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -399,6 +401,42 @@ address {
 .our-team-data {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.social,
+.clients {
+  display: flex;
+  justify-content: center;
+}
+
+.networks {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--networks-inactive);
+}
+
+.networks-link:hover,
+.networks-link:focus {
+  color: var(--current-white-color);
+  background-color: var(--accent-color);
+}
+
+.networks-icon {
+  fill: currentColor;
+}
+.social > .networks-list:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* ----------------------------------- Footer------------------------------- */
