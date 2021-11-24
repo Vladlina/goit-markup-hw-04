@@ -176,13 +176,6 @@ address {
   padding-bottom: 32px;
 }
 
-/* .header-contact-info-link::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  background-color: tomato;
-} */
-
 .envelope,
 .smartphone {
   margin-right: 10px;
@@ -396,6 +389,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  margin-bottom: 16px;
 }
 
 .our-team-data {
@@ -403,8 +397,7 @@ address {
   padding-bottom: 30px;
 }
 
-.social,
-.clients {
+.social {
   display: flex;
   justify-content: center;
 }
@@ -424,6 +417,7 @@ address {
   height: 44px;
   border-radius: 50%;
   color: var(--networks-inactive);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .networks-link:hover,
@@ -435,8 +429,49 @@ address {
 .networks-icon {
   fill: currentColor;
 }
-.social > .networks-list:not(:last-child) {
+.social > .networks-item:not(:last-child) {
   margin-right: 10px;
+}
+
+/* ------------------------------------Regular Clients-----------------------*/
+
+.regular-clients-header {
+  margin: 0 0 50px 0;
+  color: var(--main-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.regular-clients {
+  display: flex;
+  justify-content: center;
+}
+
+.regular-clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--networks-inactive);
+  border-radius: 4px;
+  color: var(--networks-inactive);
+}
+
+.regular-clients-link:hover,
+.regular-clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.regular-clients > .regular-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regular-clients-icon {
+  fill: currentColor;
 }
 
 /* ----------------------------------- Footer------------------------------- */
@@ -444,6 +479,10 @@ address {
 .footer {
   background-color: var(--second-bg-color);
   padding: 60px 0;
+}
+
+.footer-info {
+  margin-right: 70px;
 }
 
 .container > .logo.link {
@@ -493,6 +532,36 @@ address {
 .container > .logo {
   padding: 0;
   margin: 0 0 20px 0;
+}
+
+.footer-social > .footer-social-header {
+  margin-bottom: 20px;
+  color: var(--current-white-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-social-header {
+  margin: auto;
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--current-white-color);
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.social > .social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social .networks-link {
+  color: var(--current-white-color);
 }
 
 /*  -*-*-*-*-*-*-*-*-*-*-*-*-*- Portfolio Page -*-*-*-*-*-*-*-*-*-*-*-*-*-   */
