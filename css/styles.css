@@ -116,7 +116,8 @@ address {
   align-items: center;
 }
 
-.logo {
+.logo-header,
+.logo-footer {
   display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -125,7 +126,6 @@ address {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 
-  margin-right: 93px;
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -181,15 +181,6 @@ address {
   margin-right: 10px;
 
   fill: currentColor;
-}
-
-.header-logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
 }
 
 /* ---------------------------- Hero ----------------------------- */
@@ -274,7 +265,6 @@ address {
 .special-qualities-item {
   margin-right: 30px;
   width: 270px;
-  height: 151px;
 }
 
 .special-qualities-item:last-child {
@@ -288,6 +278,7 @@ address {
   background-color: var(--third-bg-color);
   margin-bottom: 30px;
   align-items: center;
+  justify-content: center;
   border-radius: 4px;
 }
 
@@ -295,9 +286,9 @@ address {
 .clock,
 .diagram,
 .astronaut {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* display: block; */
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .special-qualities-header {
@@ -397,7 +388,8 @@ address {
   padding-bottom: 30px;
 }
 
-.social {
+.social,
+.social-footer {
   display: flex;
   justify-content: center;
 }
@@ -405,7 +397,8 @@ address {
 .networks {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0;
+  padding-left: 32px;
+  padding-right: 32px;
   list-style: none;
 }
 
@@ -485,7 +478,7 @@ address {
   margin-right: 70px;
 }
 
-.container > .logo.link {
+.container > .logo-header.link {
   display: block;
   padding: 0;
   margin: 0 0 20px 0;
@@ -493,6 +486,7 @@ address {
 
 .logo-studio-footer {
   color: var(--current-white-color);
+  padding-top: 0px;
 }
 
 .address-info {
@@ -529,8 +523,8 @@ address {
   margin-bottom: 9px;
 }
 
-.container > .logo {
-  padding: 0;
+.logo-footer {
+  padding: 0px;
   margin: 0 0 20px 0;
 }
 
@@ -556,7 +550,7 @@ address {
   align-items: baseline;
 }
 
-.social > .social-list:not(:last-child) {
+.social-footer > .networks-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -634,7 +628,8 @@ address {
 }
 
 .cards-item:hover,
-.cards-item:focus {
+.cards-item:focus,
+.cards-item:focus-within {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
